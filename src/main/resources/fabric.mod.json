@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "beedengumi",
+	"version": "${version}",
+	"name": "BeeDengumi",
+	"description": "This is a mod made for the BeeDengumi SMP!",
+	"authors": [
+		"Crevan Helmont"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/beedengumi/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.helmont.beedengumi.BeeDengumi"
+		],
+		"client": [
+			"net.helmont.beedengumi.BeeDengumiClient"
+		],
+		"fabric-datagen": [
+			"net.helmont.beedengumi.BeeDengumiDataGenerator"
+		]
+	},
+	"mixins": [
+		"beedengumi.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.1",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
